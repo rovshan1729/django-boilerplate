@@ -66,10 +66,13 @@ INSTALLED_APPS += ["django_extensions"]  # noqa: F405
 CELERY_TASK_EAGER_PROPAGATES = True
 # Your stuff...
 # ------------------------------------------------------------------------------
-
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",  # noqa
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "postgres123",
+        "USER": "postgres",
+        "PASSWORD": "x19702004r",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
