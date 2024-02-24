@@ -320,6 +320,7 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend',
         'rest_framework.filters.SearchFilter',
+    ]
 }
 
 # django-cors-headers - https://github.com/adamchainz/django-cors-headers#setup
